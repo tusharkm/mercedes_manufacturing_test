@@ -261,10 +261,10 @@ df_all    #[8418 rows x 376 columns]
 #categorical_variable=['X0','X1','X2','X3','X4','X5','X6','X8','X10']
 
 
-categorical_df=df_all.iloc[0:8418,0:8]  #[8418 rows x 8 columns]
+categorical_df=df_all.iloc[0:8418,0:10]  #[8418 rows x 8 columns]
 
 
-binary_df=df_all[0:8418,8:376]  #[8418 rows x 368 columns]
+binary_df=df_all[0:8418,10:376]  #[8418 rows x 368 columns]
 
 #One-hot encoding
 ohe_features=pd.get_dummies(categorical_df)  #[8418 rows x 211 columns]
